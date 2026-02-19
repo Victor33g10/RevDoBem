@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Onda de 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+.banner img{
+    width:100%;
+    display:block;
+}
+
+.urgent-bar{
+    background:#7CFC00;
+    color:#000;
+    text-align:center;
+    padding:10px;
+    font-weight:800;
+}
+
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+h1{
+    font-size:38px;
+    margin-bottom:20px;
+    color:#7CFC00;
+}
+
+p{
+    font-size:18px;
+    max-width:800px;
+    margin:0 auto 30px auto;
+    opacity:0.9;
+}
+
+.btn{
+    display:inline-block;
+    padding:18px 45px;
+    background:#7CFC00;
+    color:#000;
+    font-weight:800;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+    box-shadow:0 0 25px #7CFC00;
+}
+
+.btn:hover{
+    transform:scale(1.07);
+    box-shadow:0 0 45px #7CFC00;
+}
+
+.countdown{
+    font-size:28px;
+    font-weight:800;
+    margin:20px 0;
+    color:#ff3b3b;
+}
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#111;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #7CFC00;
+}
+
+.testimonials{
+    background:#0f0f0f;
+}
+
+.testimonial{
+    background:#1a1a1a;
+    padding:20px;
+    margin:15px auto;
+    max-width:600px;
+    border-radius:10px;
+    border-left:5px solid #7CFC00;
+}
+
+.floating-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#7CFC00;
+    padding:15px 25px;
+    border-radius:50px;
+    font-weight:800;
+    text-decoration:none;
+    color:#000;
+    box-shadow:0 0 20px #7CFC00;
+}
+.banner{
+    text-align:center;
+    padding:40px 0;
+}
+
+.banner img{
+    width:70%;
+    max-width:700px;
+    display:block;
+    margin:0 auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="urgent-bar">
+⚠️ ATENÇÃO: Essa oportunidade pode sair do ar a qualquer momento!
+</div>
+
+<div class="banner">
+    <img src="image.png" alt="A Onda de 2026">
+</div>
+
+<div class="section">
+    <h1>Ganhe Muito Sem Vender Nada</h1>
+    <p>Existe uma nova onda digital para 2026 e quem entrar agora pode sair na frente.  
+    Isso não é promessa vazia — é tendência forte.</p>
+
+    <div class="countdown" id="timer"></div>
+
+    <a href="https://pay.sunize.com.br/FSDXmSgZ" class="btn">
+        🔥 QUERO ENTRAR AGORA
+    </a>
+</div>
+
+<div class="section">
+    <h1>Por Que Essa Oportunidade é Diferente?</h1>
+
+    <div class="benefits">
+        <div class="card">
+            <h3>💰 Sistema Automatizado</h3>
+            <p>Funciona 24h por dia mesmo enquanto você dorme.</p>
+        </div>
+
+        <div class="card">
+            <h3>📈 Mercado em Alta</h3>
+            <p>Modelo alinhado com a nova economia digital.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Entrada Antecipada</h3>
+            <p>Quem entra antes tem mais vantagem competitiva.</p>
+        </div>
+    </div>
+
+    <br><br>
+    <a href="https://pay.sunize.com.br/FSDXmSgZ" class="btn">
+        GARANTIR MINHA VAGA
+    </a>
+</div>
+
+<div class="section testimonials">
+    <h1>O Que Estão Dizendo</h1>
+
+    <div class="testimonial">
+        "Entrei sem acreditar muito e me surpreendi com o potencial."
+    </div>
+
+    <div class="testimonial">
+        "Simples, direto e com resultado rápido."
+    </div>
+
+    <div class="testimonial">
+        "Se você está vendo isso, aproveite agora."
+    </div>
+
+    <br>
+    <a href="https://pay.sunize.com.br/FSDXmSgZ" class="btn">
+        🚀 ENTRAR NA ONDA 2026
+    </a>
+</div>
+
+<a href="https://pay.sunize.com.br/FSDXmSgZ" class="floating-btn">
+COMPRAR AGORA
+</a>
+
+<script>
+// Contador regressivo de 15 minutos
+var time = 900;
+var timer = document.getElementById("timer");
+
+setInterval(function(){
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+    timer.innerHTML = "⏳ Oferta expira em: " + minutes + "m " + seconds + "s";
+    time--;
+    if(time < 0){
+        time = 0;
+    }
+},1000);
+</script>
+
+</body>
+</html>
